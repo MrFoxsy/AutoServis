@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Авто Сервис - профессиональный ремонт и обслуживание автомобилей в Оренбурге">
+    <meta name="keywords" content="ремонт автомобилей, автосервис, техническое обслуживание">
+    <title>Авто Сервис - Профессиональный ремонт и обслуживание</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-car"></i> Авто Сервис
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#prices">Цены</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="hero" id="home">
+            <h1>Добро пожаловать в Авто Сервис</h1>
+            <p>Профессиональный ремонт и обслуживание автомобилей</p>
+            <button class="cta-button" onclick="document.getElementById('contacts').scrollIntoView({behavior: 'smooth'})">Заказать услугу</button>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <h2>О нас</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Профессионализм и опыт</h3>
+                    <p>Наш автомобильный сервис работает более 5 лет, обслуживая тысячи автолюбителей. Мы специализируемся на полном спектре услуг: от регулярного обслуживания до сложного ремонта.</p>
+                    <p>Наша команда состоит из высоквалифицированных мастеров с сертификатами и постоянным повышением квалификации.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-tools"></i>
+                            <h4>Современное оборудование</h4>
+                            <p>Диагностика и ремонт на оборудовании последнего поколения</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Гарантия качества</h4>
+                            <p>Гарантия на все виды работ от 1 года</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <h4>Скорость обслуживания</h4>
+                            <p>Быстрая диагностика и ремонт без очередей</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/до1.jpg" alt="Наш сервис">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="section-container">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>ТО и диагностика</h3>
+                    <p>Техническое обслуживание, замена масла, фильтров, проверка всех систем автомобиля</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-wrench"></i>
+                    <h3>Ремонт двигателя</h3>
+                    <p>Диагностика и ремонт двигателя, замена деталей, капитальный ремонт</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Кузовные работы</h3>
+                    <p>Рихтовка, покраска, замена деталей кузова, полировка</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cog"></i>
+                    <h3>АКПП и КПП</h3>
+                    <p>Ремонт коробок передач, диагностика и обслуживание</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-battery-full"></i>
+                    <h3>Электросистемы</h3>
+                    <p>Ремонт электрики, замена аккумулятора, генератора, стартера</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-wheel"></i>
+                    <h3>Шины и подвеска</h3>
+                    <p>Замена шин, балансировка, ремонт подвески, углы установки</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prices" class="prices-section">
+        <div class="section-container">
+            <h2>Прайс-лист</h2>
+            <div class="prices-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Услуга</th>
+                            <th>Описание</th>
+                            <th>Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Диагностика</td>
+                            <td>Полная компьютерная диагностика автомобиля</td>
+                            <td>500 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Замена масла и фильтров</td>
+                            <td>ТО-0: замена масла, масляного и воздушного фильтров</td>
+                            <td>1 500 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Замена тормозных колодок</td>
+                            <td>Передние или задние колодки (одна ось)</td>
+                            <td>2 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Ремонт двигателя</td>
+                            <td>Стоимость зависит от типа ремонта</td>
+                            <td>От 5 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Кузовные работы</td>
+                            <td>Рихтовка, покраска детали</td>
+                            <td>От 3 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Замена аккумулятора</td>
+                            <td>Установка нового аккумулятора</td>
+                            <td>2 500 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="prices-note"><i class="fas fa-info-circle"></i> Точную стоимость работ уточняйте после диагностики автомобиля</p>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews-section">
+        <div class="section-container">
+            <h2>Отзывы клиентов</h2>
+            <div class="reviews-grid">
+                <div class="review">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Отличный сервис! Машина как новая после ремонта. Мастера профессионалы своего дела."</p>
+                    <cite>- Иван Иванов</cite>
+                    <span class="review-date">2025-12-10</span>
+                </div>
+                <div class="review">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Быстро и качественно. Рекомендую всем своим друзьям. Цены честные!"</p>
+                    <cite>- Мария Петрова</cite>
+                    <span class="review-date">2025-12-05</span>
+                </div>
+                <div class="review">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Прекрасное обслуживание, вежливый персонал. Буду ездить только сюда!"</p>
+                    <cite>- Сергей Смирнов</cite>
+                    <span class="review-date">2025-11-28</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="section-container">
+            <h2>Галерея работ</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterGallery('all')">Все работы</button>
+                <button class="filter-btn" onclick="filterGallery('bodywork')">Кузовные работы</button>
+                <button class="filter-btn" onclick="filterGallery('engine')">Двигатель</button>
+                <button class="filter-btn" onclick="filterGallery('other')">Другое</button>
+            </div>
+            
+            <!-- Карусель для всех машин -->
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="prevSlide()"><i class="fas fa-chevron-left"></i></button>
+                
+                <div class="carousel">
+                    <!-- Машина 1 -->
+                    <div class="carousel-slide active" data-category="bodywork">
+                        <h3>Восстановление переда кузова</h3>
+                        <div class="before-after">
+                            <div class="before">
+                                <h4>До ремонта</h4>
+                                <img src="images/до1.jpg" alt="До ремонта" onclick="openModal(this)">
+                            </div>
+                            <div class="after">
+                                <h4>После ремонта</h4>
+                                <img src="images/после1.jpg" alt="После ремонта" onclick="openModal(this)">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Машина 2 -->
+                    <div class="carousel-slide" data-category="other">
+                        <h3>Комплексный ремонт</h3>
+                        <div class="before-after">
+                            <div class="before">
+                                <h4>До ремонта</h4>
+                                <img src="images/до2.jpg" alt="До ремонта" onclick="openModal(this)">
+                            </div>
+                            <div class="after">
+                                <h4>После ремонта</h4>
+                                <img src="images/после2.jpg" alt="После ремонта" onclick="openModal(this)">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Машина 3 -->
+                    <div class="carousel-slide" data-category="engine">
+                        <h3>Видеоёмонт двигателя</h3>
+                        <div class="before-after">
+                            <div class="before">
+                                <h4>До ремонта</h4>
+                                <video controls class="car-video" onclick="openModal(this)">
+                                    <source src="videos/до3.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                            </div>
+                            <div class="after">
+                                <h4>После ремонта</h4>
+                                <video controls class="car-video" onclick="openModal(this)">
+                                    <source src="videos/после3.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Машина 4 -->
+                    <div class="carousel-slide" data-category="bodywork">
+                        <h3>Полировка и покраска</h3>
+                        <div class="before-after">
+                            <div class="before">
+                                <h4>До ремонта</h4>
+                                <img src="images/до4.jpg" alt="До ремонта" onclick="openModal(this)">
+                            </div>
+                            <div class="after">
+                                <h4>После ремонта</h4>
+                                <img src="images/после4.jpg" alt="После ремонта" onclick="openModal(this)">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Машина 5 -->
+                    <div class="carousel-slide" data-category="all">
+                        <h3>Ваш автомобиль может быть здесь</h3>
+                        <div class="before-after">
+                            <div class="before">
+                                <h4>До ремонта</h4>
+                                <div class="no-photo">
+                                    <div>
+                                        <i class="fas fa-image"></i>
+                                        <p>Здесь может быть ваша машина!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="after">
+                                <h4>После ремонта</h4>
+                                <div class="no-photo">
+                                    <div>
+                                        <i class="fas fa-image"></i>
+                                        <p>Приносите свой автомобиль</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn next" onclick="nextSlide()"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            
+            <!-- Индикаторы слайдов -->
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
+                <span class="indicator" onclick="goToSlide(3)"></span>
+                <span class="indicator" onclick="goToSlide(4)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно для изображений -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <section id="contacts" class="contacts-section">
+        <div class="section-container">
+            <h2>Контакты и заказ</h2>
+            <div class="contacts-content">
+                <div class="contact-info">
+                    <div class="info-block">
+                        <h3><i class="fas fa-phone"></i> Телефон</h3>
+                        <p><a href="tel:+71234567890">+7 (123) 456-78-90</a></p>
+                        <p><a href="tel:+71234567891">+7 (123) 456-78-91</a></p>
+                    </div>
+                    <div class="info-block">
+                        <h3><i class="fas fa-envelope"></i> Email</h3>
+                        <p><a href="mailto:info@autoservice.ru">info@autoservice.ru</a></p>
+                    </div>
+                    <div class="info-block">
+                        <h3><i class="fas fa-map-marker-alt"></i> Адрес</h3>
+                        <p>г. Оренбург, ул. Ленина, 42</p>
+                    </div>
+                    <div class="info-block">
+                        <h3><i class="fas fa-clock"></i> Режим работы</h3>
+                        <p>Пн-Пт: 08:00 - 19:00</p>
+                        <p>Сб: 09:00 - 16:00</p>
+                        <p>Вс: Выходной</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Заказать звонок</h3>
+                    <form onsubmit="submitForm(event)">
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон *</label>
+                            <input type="tel" id="phone" name="phone" required pattern="[\d\s\-\+\(\)]+">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Услуга</label>
+                            <select id="service" name="service">
+                                <option>Выбрать услугу</option>
+                                <option>ТО и диагностика</option>
+                                <option>Ремонт двигателя</option>
+                                <option>Кузовные работы</option>
+                                <option>АКПП и КПП</option>
+                                <option>Электросистемы</option>
+                                <option>Шины и подвеска</option>
+                                <option>Другое</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Отправить</button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="section-container">
+            <p>&copy; 2025 Авто Сервис. Все права защищены.</p>
+            <p>Контакты: +7 (123) 456-78-90 | info@autoservice.ru | г. Оренбург</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
